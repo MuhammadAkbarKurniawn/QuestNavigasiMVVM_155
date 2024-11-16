@@ -69,7 +69,11 @@ fun FormulirView(
                 Text("Masukkan Nama Anda")
             }
         )
-
+        TextField(
+            modifier = Modifier.fillMaxWidth().padding(5.dp),
+            value = NIM,
+            onValueChange = { NIM = it }
+        )
 
         Row {
             pilihanJK.forEach() { selectedJK ->
