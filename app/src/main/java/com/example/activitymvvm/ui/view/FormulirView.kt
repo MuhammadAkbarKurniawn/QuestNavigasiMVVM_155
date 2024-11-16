@@ -79,8 +79,8 @@ fun FormulirView(
             },
             placeholder = {
                 Text ("Masukkan NIM Anda")
-            }
-
+            },
+            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
         )
 
         Row {
