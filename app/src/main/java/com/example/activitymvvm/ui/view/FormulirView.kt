@@ -29,6 +29,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.activitymvvm.model.DataJK
+import org.w3c.dom.Text
 
 
 @Composable
@@ -72,7 +73,14 @@ fun FormulirView(
         TextField(
             modifier = Modifier.fillMaxWidth().padding(5.dp),
             value = NIM,
-            onValueChange = { NIM = it }
+            onValueChange = { NIM = it },
+            label = {
+                Text("NIM")
+            },
+            placeholder = {
+                Text ("Masukkan NIM Anda")
+            }
+
         )
 
         Row {
